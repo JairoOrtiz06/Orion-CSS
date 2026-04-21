@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"estilos.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/estilos.scss","../scss/abstracts/_variables.scss"],"names":[],"mappings":"AAEA;EACE,YCKW;EDJX,OCMK;;;ADHP;EACE;EACA,YCRQ;EDSR;;;AAGF;EACE;EACA,YCbU;EDcV","file":"estilos.css"}

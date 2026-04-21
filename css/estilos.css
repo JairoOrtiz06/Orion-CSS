@@ -1,2 +1,18 @@
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.prueba-colores {
+  padding: 20px;
+  background: #4f46e5;
+  color: white;
+}
+
+.prueba-secundario {
+  padding: 20px;
+  background: #64748b;
+  color: white;
+}
 
 /*# sourceMappingURL=estilos.css.map */

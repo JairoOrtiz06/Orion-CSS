@@ -1,0 +1,18 @@
+@use 'abstracts/variables';
+
+body {
+  background: variables.$background;
+  color: variables.$text;
+}
+
+.prueba-colores {
+  padding: 20px;
+  background: variables.$primary;
+  color: white;
+}
+
+.prueba-secundario {
+  padding: 20px;
+  background: variables.$secondary;
+  color: white;
+}
