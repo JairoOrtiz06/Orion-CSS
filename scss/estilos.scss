@@ -2,11 +2,11 @@
 @use 'abstracts/mixins';
 @use 'base/reset';
 @use 'base/typography';
+@use './components/buttons';
 
 body {
   background: variables.$background;
   color: variables.$text;
-  
 }
 
 .prueba-colores {
@@ -40,4 +40,10 @@ body {
   @include mixins.flex-center;
   height: 100px;
   background: red;
+}
+
+//prueba de boton 
+.prueba-btn {
+  padding: 20px;
+  background: variables.$primary;
 }
