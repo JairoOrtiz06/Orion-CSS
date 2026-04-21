@@ -1,9 +1,12 @@
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
+@use 'base/reset';
+@use 'base/typography';
 
 body {
   background: variables.$background;
   color: variables.$text;
+  
 }
 
 .prueba-colores {
