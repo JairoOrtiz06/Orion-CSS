@@ -1,8 +1,12 @@
 @use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/reset';
+@use 'base/typography';
 
 body {
   background: variables.$background;
   color: variables.$text;
+  
 }
 
 .prueba-colores {
@@ -15,4 +19,25 @@ body {
   padding: 20px;
   background: variables.$secondary;
   color: white;
+}
+
+.prueba-flex {
+  @include mixins.flex-center;
+  height: 100px;
+  background: variables.$primary;
+  color: white;
+}
+
+.prueba-responsive {
+  background: red;
+
+  @include mixins.responsive(md) {
+    background: green;
+  }
+}
+
+.test {
+  @include mixins.flex-center;
+  height: 100px;
+  background: red;
 }

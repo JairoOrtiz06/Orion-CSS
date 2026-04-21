@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-main;
+  color: $text;
+  background: $background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: $spacing-md;
+}
+
+p {
+  margin-bottom: $spacing-sm;
+  line-height: 1.6;
+}
