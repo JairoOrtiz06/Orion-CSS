@@ -1,0 +1,25 @@
+@use   'variables' as *;
+@use 'sass:map';
+
+@mixin flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boton-base 
+{
+    padding: 10px 20px;
+    border-radius: $radius-md;
+    border: none;
+    cursor: pointer;
+    font-family: $font-main;
+    transition: all 0.3s ease;
+}
+
+@mixin responsive($size) {
+  @media (min-width: map.get($breakpoints, $size)) {
+    @content;
+  }
+}
