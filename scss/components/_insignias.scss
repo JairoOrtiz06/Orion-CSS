@@ -1,0 +1,57 @@
+@use '../abstracts/variables' as v;
+
+//Clase Principal
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: v.$spacing-xs;
+
+    font-family: v.$font-main;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    white-space: nowrap;
+
+    padding: 8px v.$spacing-md;
+    border-radius: v.$radius-sm;
+    border: 1px solid transparent;
+}
+
+// VARIANTE PÍLDORA
+.badge-pill {
+    border-radius: 9999px;
+}
+
+
+// SÓLIDAS
+.badge-primary {
+    background-color: color-mix(in srgb, v.$primary 20%, v.$surface);
+    border-color: color-mix(in srgb, v.$primary 35%, transparent);
+    color: color-mix(in srgb, v.$primary 85%, v.$text);
+}
+
+.badge-success {
+    background-color: color-mix(in srgb, v.$success 20%, v.$surface);
+    border-color: color-mix(in srgb, v.$success 35%, transparent);
+    color: color-mix(in srgb, v.$success 85%, v.$text);
+}
+
+.badge-danger {
+    background-color: color-mix(in srgb, v.$danger 20%, v.$surface);
+    border-color: color-mix(in srgb, v.$danger 35%, transparent);
+    color: color-mix(in srgb, v.$danger 85%, v.$text);
+}
+
+.badge-warning {
+    background-color: color-mix(in srgb, v.$warning 20%, v.$surface);
+    border-color: color-mix(in srgb, v.$warning 35%, transparent);
+    color: color-mix(in srgb, v.$warning 90%, v.$text);
+}
+
+.badge-secondary {
+    background-color: color-mix(in srgb, v.$secondary 20%, v.$surface);
+    border-color: color-mix(in srgb, v.$secondary 35%, transparent);
+    color: color-mix(in srgb, v.$secondary 85%, v.$text);
+}

@@ -181,6 +181,56 @@ p {
   opacity: 1;
 }
 
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.badge-pill {
+  border-radius: 9999px;
+}
+
+.badge-primary {
+  background-color: color-mix(in srgb, #4f46e5 20%, #1e293b);
+  border-color: color-mix(in srgb, #4f46e5 35%, transparent);
+  color: color-mix(in srgb, #4f46e5 85%, #e2e8f0);
+}
+
+.badge-success {
+  background-color: color-mix(in srgb, #22c55e 20%, #1e293b);
+  border-color: color-mix(in srgb, #22c55e 35%, transparent);
+  color: color-mix(in srgb, #22c55e 85%, #e2e8f0);
+}
+
+.badge-danger {
+  background-color: color-mix(in srgb, #ef4444 20%, #1e293b);
+  border-color: color-mix(in srgb, #ef4444 35%, transparent);
+  color: color-mix(in srgb, #ef4444 85%, #e2e8f0);
+}
+
+.badge-warning {
+  background-color: color-mix(in srgb, #f59e0b 20%, #1e293b);
+  border-color: color-mix(in srgb, #f59e0b 35%, transparent);
+  color: color-mix(in srgb, #f59e0b 90%, #e2e8f0);
+}
+
+.badge-secondary {
+  background-color: color-mix(in srgb, #64748b 20%, #1e293b);
+  border-color: color-mix(in srgb, #64748b 35%, transparent);
+  color: color-mix(in srgb, #64748b 85%, #e2e8f0);
+}
+
 body {
   background: #0f172a;
   color: #e2e8f0;

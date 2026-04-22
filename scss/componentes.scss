@@ -4,6 +4,8 @@
 @use 'base/typography';
 @use './components/botones';
 @use 'components/alertas';
+@use 'components/insignias';
+
 
 body {
   background: variables.$background;
