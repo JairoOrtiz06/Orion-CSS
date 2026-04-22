@@ -24,33 +24,26 @@
     border-radius: 9999px;
 }
 
-// SÓLIDAS
 .badge-primary {
-    background-color: color-mix(in srgb, v.$primary 20%, v.$surface);
-    border-color: color-mix(in srgb, v.$primary 35%, transparent);
-    color: color-mix(in srgb, v.$primary 85%, v.$text);
+  background-color: rgba(v.$primary, 0.2);
+  border: 1px solid rgba(v.$primary, 0.4);
+  color: v.$primary;
 }
 
 .badge-success {
-    background-color: color-mix(in srgb, v.$success 20%, v.$surface);
-    border-color: color-mix(in srgb, v.$success 35%, transparent);
-    color: color-mix(in srgb, v.$success 85%, v.$text);
+  background-color: rgba(v.$success, 0.2);
+  border: 1px solid rgba(v.$success, 0.4);
+  color: v.$success;
 }
 
 .badge-danger {
-    background-color: color-mix(in srgb, v.$danger 20%, v.$surface);
-    border-color: color-mix(in srgb, v.$danger 35%, transparent);
-    color: color-mix(in srgb, v.$danger 85%, v.$text);
+  background-color: rgba(v.$danger, 0.2);
+  border: 1px solid rgba(v.$danger, 0.4);
+  color: v.$danger;
 }
 
 .badge-warning {
-    background-color: color-mix(in srgb, v.$warning 20%, v.$surface);
-    border-color: color-mix(in srgb, v.$warning 35%, transparent);
-    color: color-mix(in srgb, v.$warning 90%, v.$text);
-}
-
-.badge-secondary {
-    background-color: color-mix(in srgb, v.$secondary 20%, v.$surface);
-    border-color: color-mix(in srgb, v.$secondary 35%, transparent);
-    color: color-mix(in srgb, v.$secondary 85%, v.$text);
+  background-color: rgba(v.$warning, 0.2);
+  border: 1px solid rgba(v.$warning, 0.4);
+  color: v.$warning;
 }
