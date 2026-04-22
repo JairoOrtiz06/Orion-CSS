@@ -1,8 +1,6 @@
 @use '../abstracts/variables' as v;
 
-// =======================
-// CARD BASE
-// =======================
+//Clase Principal
 .card {
   background: v.$surface;
   color: v.$text;
@@ -14,33 +12,27 @@
   transition: all 0.2s ease;
 }
 
-// Hover moderno
+// Hover 
 .card:hover {
   transform: translateY(-3px);
   box-shadow: v.$shadow-md;
 }
 
-// =======================
-// IMAGEN
-// =======================
+//IMG
 .card-img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-// =======================
-// HEADER
-// =======================
+//Encabezado
 .card-header {
   padding: v.$spacing-md;
   font-weight: bold;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-// =======================
-// BODY
-// =======================
+//Cuerpo
 .card-body {
   padding: v.$spacing-md;
   flex: 1;
@@ -56,9 +48,7 @@
   color: v.$text-muted;
 }
 
-// =======================
-// FOOTER
-// =======================
+//Pie de pagina
 .card-footer {
   padding: v.$spacing-md;
   border-top: 1px solid rgba(255,255,255,0.1);
