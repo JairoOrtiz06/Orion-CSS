@@ -2,7 +2,7 @@
 @use 'abstracts/mixins';
 @use 'base/reset';
 @use 'base/typography';
-@use './components/buttons';
+@use './components/botones';
 
 body {
   background: variables.$background;
