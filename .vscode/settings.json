@@ -1,0 +1,17 @@
+{
+  "liveSassCompile.settings.forceBaseDirectory": "/scss",
+  "liveSassCompile.settings.includeItems": [
+    "/estilos.scss",
+    "/componentes.scss"
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css",
+      "generateMap": true,
+      "mapsIncludeSources": true
+    }
+  ],
+  "liveSassCompile.settings.showOutputWindowOn": "Error"
+}

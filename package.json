@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "sass": "sass scss/estilos.scss css/estilos.css --watch",
+    "sass": "sass --watch scss/estilos.scss:css/estilos.css scss/componentes.scss:css/componentes.css",
+    "sass:build": "sass scss/estilos.scss:css/estilos.css scss/componentes.scss:css/componentes.css",
+    "sass:estilos": "sass --watch scss/estilos.scss:css/estilos.css",
+    "sass:componentes": "sass --watch scss/componentes.scss:css/componentes.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -4,7 +4,7 @@
 @use 'base/typography';
 @use 'layout/container';
 @use 'layout/grid';
-@use './components/buttons';
+@use 'components/botones';
 
 body {
   background: variables.$background;
