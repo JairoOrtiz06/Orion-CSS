@@ -1,0 +1,20 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/reset';
+@use 'base/typography';
+@use './components/botones';
+@use 'components/alertas';
+@use 'components/insignias';
+
+
+body {
+  background: variables.$background;
+  color: variables.$text;
+  margin: 40px;
+}
+
+//prueba de boton 
+.prueba-btn {
+  padding: 20px;
+  background: variables.$primary;
+}

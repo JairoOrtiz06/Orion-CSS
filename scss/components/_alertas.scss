@@ -1,0 +1,64 @@
+@use '../abstracts/variables' as v;
+
+//Clase Principal
+.alert {
+  padding: v.$spacing-md;
+  border-radius: v.$radius-md;
+  font-family: v.$font-main;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: v.$spacing-md;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: v.$spacing-sm;
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+}
+
+//VARIANTES
+// SUCCESS
+.alert-success {
+  background-color: rgba(v.$success, 0.15);
+  color: v.$success;
+  border-left-color: v.$success;
+}
+
+// DANGER
+.alert-danger {
+  background-color: rgba(v.$danger, 0.15);
+  color: v.$danger;
+  border-left-color: v.$danger;
+}
+
+// WARNING
+.alert-warning {
+  background-color: rgba(v.$warning, 0.15);
+  color: v.$warning;
+  border-left-color: v.$warning;
+}
+
+// INFO 
+.alert-info {
+  background-color: rgba(v.$secondary, 0.15);
+  color: v.$secondary;
+  border-left-color: v.$secondary;
+}
+
+//Hovver
+.alert:hover {
+  box-shadow: v.$shadow-sm;
+}
+
+//Boton cerrar
+.alert-close {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.alert-close:hover {
+  opacity: 1;
+}
