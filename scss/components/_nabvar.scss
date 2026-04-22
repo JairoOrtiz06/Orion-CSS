@@ -1,0 +1,89 @@
+@use '../abstracts/variables' as v;
+
+// =======================
+// BASE (común a todos)
+// =======================
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: v.$spacing-sm v.$spacing-lg;
+  font-family: v.$font-main;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: v.$spacing-md;
+}
+
+.navbar-link {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+// =======================
+// 🔵 NAVBAR 1: CLÁSICO
+// =======================
+.navbar-classic {
+  background: v.$surface;
+  color: v.$text;
+}
+
+.navbar-classic .navbar-link {
+  color: v.$text;
+}
+
+.navbar-classic .navbar-link:hover {
+  color: v.$primary;
+}
+
+// =======================
+// 🟣 NAVBAR 2: MODERNO (con fondo fuerte)
+// =======================
+.navbar-modern {
+  background: v.$primary;
+  color: white;
+  border-radius: v.$radius-md;
+}
+
+.navbar-modern .navbar-link {
+  color: white;
+}
+
+.navbar-modern .navbar-link:hover {
+  background: rgba(255,255,255,0.2);
+  padding: 4px 8px;
+  border-radius: v.$radius-sm;
+}
+
+// =======================
+// ⚫ NAVBAR 3: MINIMALISTA
+// =======================
+.navbar-minimal {
+  background: transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-minimal .navbar-link {
+  color: v.$text-muted;
+}
+
+.navbar-minimal .navbar-link:hover {
+  color: v.$text;
+  border-bottom: 2px solid v.$primary;
+}
+
+// =======================
+// RESPONSIVE (simple)
+// =======================
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    gap: v.$spacing-sm;
+  }
+}

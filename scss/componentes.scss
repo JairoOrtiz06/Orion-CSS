@@ -2,10 +2,11 @@
 @use 'abstracts/mixins';
 @use 'base/reset';
 @use 'base/typography';
-@use './components/botones';
+@use './components/buttons';
 @use 'components/alertas';
 @use 'components/insignias';
 @use 'components/tarjetas';
+@use 'components/nabvar';
 
 
 body {
