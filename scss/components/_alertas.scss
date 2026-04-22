@@ -1,8 +1,6 @@
 @use '../abstracts/variables' as v;
 
-// =======================
-// BASE ALERT
-// =======================
+//Clase Principal
 .alert {
   padding: v.$spacing-md;
   border-radius: v.$radius-md;
@@ -18,10 +16,7 @@
   transition: all 0.2s ease;
 }
 
-// =======================
-// VARIANTES SEMÁNTICAS
-// =======================
-
+//VARIANTES
 // SUCCESS
 .alert-success {
   background-color: rgba(v.$success, 0.15);
@@ -50,16 +45,12 @@
   border-left-color: v.$secondary;
 }
 
-// =======================
-// HOVER (detalle pro)
-// =======================
+//Hovver
 .alert:hover {
   box-shadow: v.$shadow-sm;
 }
 
-// =======================
-// BOTÓN CERRAR (extra pro)
-// =======================
+//Boton cerrar
 .alert-close {
   cursor: pointer;
   font-size: 16px;
